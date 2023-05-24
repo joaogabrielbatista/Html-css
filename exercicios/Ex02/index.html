@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+    <h1>Fazendo imagens dinamicas</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="../Ex01/imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="../Ex01/imagens/media.png" type="image/png">
+        <img src="../Ex01/imagens/grande.png" alt="foto grande">
+    </picture>
+    <h1>Ouvindo um audio do guanabara</h1>
+    <p>se liga nesse audio magnifico</p>
+    <audio preload="metadata" src="musicas/y2meta.com - oh maga (128 kbps).mp3" controls
+    ></audio>       
+</body>
+</html>

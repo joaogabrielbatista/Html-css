@@ -1,0 +1,235 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*CABEÇALHO*/
+.cabecalho{
+    position: relative;
+    min-height: 800px;
+    background-image: url('../imagens/musculo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.slogan{
+    color: #ffffff;
+    position: absolute;
+    bottom: 200px;
+    left: 100px;
+}
+.slogan h1{
+    font-size: 30px;
+}
+header{
+    background-color: rgb(0,0,0,0.6);
+    height: 60px;
+}
+.center{
+    max-width: 1100px;
+    padding: 0 2%;
+    display: flex;
+    margin: 0 auto;
+
+}
+.logo{
+    color: #ec4141;
+    margin-top: 18px;
+}
+.menu-container{
+    width: 100%;
+    justify-content: space-between;
+}
+.menu-container a.menu-ativo{
+    background-color: #ec4141;
+}
+.menu-container a{
+    color: #ffffff;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 0 10px;
+    line-height: 60px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.menu-container a:hover{
+    color: #ec4141 ;
+}
+/*MAIN*/
+#sobre{
+    padding:40px ;
+}
+.sobre-conteudo{
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    text-align: justify;
+    margin: auto;
+}
+#sobre>h2{
+    font-size: 2em;
+    padding-top: 90px;
+}
+.ul-h{
+    list-style-type: '\2714\00a0';
+}
+.conteudo-central{
+    padding-top: 60px;
+    width: 100%;
+    display: block;
+    align-items: center;
+    text-align: justify;
+    padding-left: 150px;
+    padding-right: 150px;
+   justify-content: space-around;
+}
+.conteudo-secundario{
+   width: 50%;
+}
+.sobre_h2{
+    text-align: center;
+}
+.sobre-h3{
+    margin: auto;
+    text-align: center;
+    font-size: 1.2em;
+}
+.sobre-h4{
+    text-align: center;
+    font-size: 1.05em;
+}
+#sobre p{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+
+}
+#sobre img{
+   padding-right: 100px;
+   width: 35%;
+}
+.imagem_sobre{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+.principal{
+    background-color: #ec4141;
+    padding: 50px 0;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 100px;
+}
+.principal h2{
+    font-size: 2em;padding-top: 50px;}
+.principal h3{
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.foto{
+    text-align: left;
+    width: 100%;
+    margin: 0 10px;
+}
+
+.apresentacao_principal{
+width: 75%;
+display: flex;
+justify-content: space-around;
+margin-top: 50px;
+margin-left: auto;
+margin-right: auto;
+}
+.foto img{
+width: 100%;
+display: block;
+}
+.foto h3{
+    text-align: center;
+    background-color: #ec4141;
+    border: 1px solid #ffffff;
+    padding: 8px;
+}
+.foto p{
+    background-color: #ffffff;
+    padding: 8px;
+    color: #000000;
+}
+.contato_principal{
+    width: 100%;
+    text-align: center;
+}
+.contato_principal div{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: inline-block;
+    font-weight: bold;
+}
+.contato_principal img{
+width: 50px;
+display: flex;
+margin: auto;
+padding: auto;
+}
+.contato_principal a{
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+    color: #000000;
+}
+.contato_principal p{
+    padding-top: 20px;
+}
+.contato_principal h2{
+    font-size: 2em;
+    margin-top: 40px;
+}
+.rodape{
+    color: #ffffff;
+    text-align: center;
+    background-color: #2e2f2f;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Nunito', sans-serif;
+}
+/*RODAPÉ*/
+.rodape a{
+    display: block;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+.rodape a:hover{
+    color: #ec4141;
+}
+@media screen and (max-width:768px){
+    .menu-container{
+        width: 30%;
+        flex-direction: column;
+    }
+    .conteudo-central ul{
+        flex-direction: column;
+    }
+
+    .imagem_sobre{
+        flex-direction: column;
+        opacity: 0;
+    }
+    .apresentacao_principal{
+        width: 70%;
+        flex-direction:column;
+    }
+    .contato_principal img{
+        flex-direction: column;
+    }
+}
