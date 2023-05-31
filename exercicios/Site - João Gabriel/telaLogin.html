@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <!--<link rel="stylesheet" href="estilo/style.css">-->
+</head>
+<style>
+    .centro {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-image: url(imagens/fundoLogin.jpg);
+    }
+    .nome-caixa1 {
+        display: block;
+        margin-bottom: 8px;
+    }
+    .nome-caixa2{
+        display: block;
+        margin-bottom: 8px;
+        padding-top: 15px;
+    }
+    #form {
+        margin-top: 100px;
+        width: 500px;
+        height: 300px;
+        background-color: #ffff;
+        border-radius: 10px;
+    }
+    .div-input-mail{
+        text-align: center;
+    }
+    .div-input-check{
+        padding-bottom: 15px;
+        margin-left: 25px;
+        text-align: center;
+    }
+    .div-input-password{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .botao{
+        background-color: #ff005c;
+        border-radius: 30px;
+        border: 1px solid transparent;
+        height: 40px;
+        width: 70px;
+        color: #ffff;
+        font-size:  medium;
+        display: block;
+        margin: 0 auto;
+    }
+    .esqueceu{
+        text-align: center;
+    }
+
+</style>
+
+<body class="centro">
+        <form action="" method="POST" id="form">
+            <div class="div-input-mail">
+                <label class="nome-caixa1">
+                    E-mail
+                </label>
+                <input type="text" value="" name="" class="" />
+            </div>
+            <div class="div-input-password">
+                <label class="nome-caixa2">
+                    Senha
+                </label>
+                <input type="password" value="" name="" class="" />
+            </div>
+            <div class="div-input-check">
+                <label class="">
+                    <input type="checkbox" name="" id="" class="" value="">
+                    <i class="i"></i>Lembrar de mim
+                </label>
+            </div>
+            <button type="submit" class="botao">Entrar</button>
+            <p class="esqueceu">
+                <a href="" class="">
+                    Esqueceu sua senha?
+                </a>
+            </p>
+        </form>
+</body>
+
+</html>

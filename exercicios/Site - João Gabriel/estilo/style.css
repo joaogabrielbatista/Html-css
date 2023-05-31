@@ -1,50 +1,60 @@
 @charset "utf-8";
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 /*CABEÇALHO*/
-.cabecalho{
+.cabecalho {
     position: relative;
     min-height: 800px;
     background-image: url('../imagens/musculo.jpg');
     background-size: cover;
     background-position: center;
 }
-.slogan{
+
+.slogan {
     color: #ffffff;
     position: absolute;
     bottom: 200px;
     left: 100px;
 }
-.slogan h1{
+
+.slogan h1 {
     font-size: 30px;
 }
-header{
-    background-color: rgb(0,0,0,0.6);
+
+header {
+    background-color: rgb(0, 0, 0, 0.6);
     height: 60px;
 }
-.center{
+
+.center {
     max-width: 1100px;
     padding: 0 2%;
     display: flex;
     margin: 0 auto;
 
 }
-.logo{
+
+.logo {
     color: #ec4141;
     margin-top: 18px;
 }
-.menu-container{
+
+.menu-container {
     width: 100%;
     justify-content: space-between;
 }
-.menu-container a.menu-ativo{
+
+.menu-container a.menu-ativo {
     background-color: #ec4141;
 }
-.menu-container a{
+
+.menu-container a {
     color: #ffffff;
     display: inline-block;
     margin: 0 10px;
@@ -53,28 +63,34 @@ header{
     text-decoration: none;
     transition: 0.4s;
 }
-.menu-container a:hover{
-    color: #ec4141 ;
+
+.menu-container a:hover {
+    color: #ec4141;
 }
+
 /*MAIN*/
-#sobre{
-    padding:40px ;
+#sobre {
+    padding: 40px;
 }
-.sobre-conteudo{
+
+.sobre-conteudo {
     display: flex;
     flex-direction: row;
     padding: 40px;
     text-align: justify;
     margin: auto;
 }
-#sobre>h2{
+
+#sobre>h2 {
     font-size: 2em;
     padding-top: 90px;
 }
-.ul-h{
+
+.ul-h {
     list-style-type: '\2714\00a0';
 }
-.conteudo-central{
+
+.conteudo-central {
     padding-top: 60px;
     width: 100%;
     display: block;
@@ -82,24 +98,29 @@ header{
     text-align: justify;
     padding-left: 150px;
     padding-right: 150px;
-   justify-content: space-around;
+    justify-content: space-around;
 }
-.conteudo-secundario{
-   width: 50%;
+
+.conteudo-secundario {
+    width: 50%;
 }
-.sobre_h2{
+
+.sobre_h2 {
     text-align: center;
 }
-.sobre-h3{
+
+.sobre-h3 {
     margin: auto;
     text-align: center;
     font-size: 1.2em;
 }
-.sobre-h4{
+
+.sobre-h4 {
     text-align: center;
     font-size: 1.05em;
 }
-#sobre p{
+
+#sobre p {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -108,64 +129,77 @@ header{
     padding: auto;
 
 }
-#sobre img{
-   padding-right: 100px;
-   width: 35%;
+
+#sobre img {
+    padding-right: 100px;
+    width: 35%;
 }
-.imagem_sobre{
+
+.imagem_sobre {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
 }
-.principal{
+
+.principal {
     background-color: #ec4141;
     padding: 50px 0;
     text-align: center;
     color: #ffffff;
     padding-bottom: 100px;
 }
-.principal h2{
-    font-size: 2em;padding-top: 50px;}
-.principal h3{
+
+.principal h2 {
+    font-size: 2em;
+    padding-top: 50px;
+}
+
+.principal h3 {
     text-transform: uppercase;
     margin-top: 20px;
     margin-bottom: 10px;
 }
-.foto{
+
+.foto {
     text-align: left;
     width: 100%;
     margin: 0 10px;
 }
 
-.apresentacao_principal{
-width: 75%;
-display: flex;
-justify-content: space-around;
-margin-top: 50px;
-margin-left: auto;
-margin-right: auto;
+.apresentacao_principal {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.foto img{
-width: 100%;
-display: block;
+
+.foto img {
+    width: 100%;
+    display: block;
 }
-.foto h3{
+
+.foto h3 {
     text-align: center;
     background-color: #ec4141;
     border: 1px solid #ffffff;
     padding: 8px;
 }
-.foto p{
+
+.foto p {
     background-color: #ffffff;
     padding: 8px;
     color: #000000;
 }
-.contato_principal{
+
+.contato_principal {
     width: 100%;
     text-align: center;
 }
-.contato_principal div{
+
+.contato_principal div {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 40px;
@@ -173,27 +207,32 @@ display: block;
     display: inline-block;
     font-weight: bold;
 }
-.contato_principal img{
-width: 50px;
-display: flex;
-margin: auto;
-padding: auto;
+
+.contato_principal img {
+    width: 50px;
+    display: flex;
+    margin: auto;
+    padding: auto;
 }
-.contato_principal a{
+
+.contato_principal a {
     text-align: center;
     align-items: center;
     margin: auto;
     padding: auto;
     color: #000000;
 }
-.contato_principal p{
+
+.contato_principal p {
     padding-top: 20px;
 }
-.contato_principal h2{
+
+.contato_principal h2 {
     font-size: 2em;
     margin-top: 40px;
 }
-.rodape{
+
+.rodape {
     color: #ffffff;
     text-align: center;
     background-color: #2e2f2f;
@@ -201,35 +240,79 @@ padding: auto;
     padding-bottom: 10px;
     font-family: 'Nunito', sans-serif;
 }
+
 /*RODAPÉ*/
-.rodape a{
+.rodape a {
     display: block;
     padding-bottom: 10px;
     text-decoration: none;
     color: #ffffff;
-    
+
 }
-.rodape a:hover{
+
+.rodape a:hover {
     color: #ec4141;
 }
-@media screen and (max-width:768px){
-    .menu-container{
+
+/*
+.centro{
+    min-height: 100vh;
+}
+.div-input{
+    position: relative;
+    min-height: 100vh;
+}
+.div-input>form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+.nome-caixa{
+    display: block;
+}
+#form{
+    display: flex;
+    margin: 0 auto;
+    padding: 0 auto;
+}*/
+.login h2{
+    text-align: center;
+    font-size: 2em;
+}
+.planos{
+    display: inline-block;
+    background-color: brown;
+    border: #ffffff;
+}
+.planos h3{
+    text-align: center;
+}
+.botao-registro{
+    display: block;
+    text-align: center;
+}
+@media screen and (max-width:768px) {
+    .menu-container {
         width: 30%;
         flex-direction: column;
     }
-    .conteudo-central ul{
+
+    .conteudo-central ul {
         flex-direction: column;
     }
 
-    .imagem_sobre{
+    .imagem_sobre {
         flex-direction: column;
         opacity: 0;
     }
-    .apresentacao_principal{
+
+    .apresentacao_principal {
         width: 70%;
-        flex-direction:column;
+        flex-direction: column;
     }
-    .contato_principal img{
+
+    .contato_principal img {
         flex-direction: column;
     }
 }
