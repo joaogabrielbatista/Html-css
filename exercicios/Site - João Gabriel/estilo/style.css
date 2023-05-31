@@ -288,9 +288,14 @@ header {
 .planos h3{
     text-align: center;
 }
-.botao-registro{
+.button{
     display: block;
     text-align: center;
+    margin: 10px auto;
+}
+.botao-registro{
+    color:#000000;
+    text-decoration: none;
 }
 @media screen and (max-width:768px) {
     .menu-container {
