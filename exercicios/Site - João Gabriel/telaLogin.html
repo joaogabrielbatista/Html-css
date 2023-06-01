@@ -9,6 +9,9 @@
     <!--<link rel="stylesheet" href="estilo/style.css">-->
 </head>
 <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
     .centro {
         align-items: center;
         display: flex;
@@ -16,7 +19,8 @@
         flex-wrap: wrap;
         justify-content: center;
         height: 97vh;
-        background-image: url(imagens/fundoLogin.jpg);
+        background-image: url(imagens/fundoLogin3.jpg);
+        background-color: black;
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -34,7 +38,7 @@
         padding-top: 20px;
         width: 400px;
         height: 300px;
-        background-color: #ffff;
+        background-color: #1e1e1e;
         border-radius: 10px;
     }
     .div-input-mail{
@@ -44,7 +48,9 @@
         padding-bottom: 15px;
         margin-left: 25px;
         text-align: center;
+        
     }
+
     .div-input-password{
         margin-bottom: 20px;
         text-align: center;
@@ -54,16 +60,54 @@
         border-radius: 30px;
         border: 1px solid transparent;
         height: 40px;
-        width: 70px;
+        width: 125px;
         color: #ffff;
         font-size:  medium;
         display: block;
         margin: 0 auto;
+        cursor: pointer;
     }
     .esqueceu{
         text-align: center;
     }
-
+    .email{
+        background-color: #121212;
+        border-radius: 7px;
+        border-color: transparent;
+        height: 30px;
+        width: 300px;
+    }
+    .senha{
+       background-color: #121212;
+       border-radius: 7px;
+       border-color: transparent;
+       height: 30px;
+        width: 300px;
+    }
+    label{
+        color: #ffff;
+    }
+    .esqueceu-senha{
+    color: #ffffff;
+    text-decoration: none;
+}
+.esqueceu-senha:hover{
+    color: #ff005c;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.div-input-check + label::before{
+    content:'';
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: #121212;
+    display: inline-block;
+    border-color: transparent;
+}
+.check:checked + label::before{
+background-color: red;
+}
 </style>
 
 <body class="centro">
@@ -72,23 +116,23 @@
                 <label class="nome-caixa1">
                     E-mail
                 </label>
-                <input type="text" value="" name="" class="" />
+                <input type="text" value="" name="" class="email" />
             </div>
             <div class="div-input-password">
                 <label class="nome-caixa2">
                     Senha
                 </label>
-                <input type="password" value="" name="" class="" />
+                <input type="password" value="" name="" class="senha" />
             </div>
             <div class="div-input-check">
                 <label class="">
-                    <input type="checkbox" name="" id="" class="" value="">
+                    <input type="checkbox" name="" id="" class="check" value="">
                     <i class="i"></i>Lembrar de mim
                 </label>
             </div>
             <button type="submit" class="botao">Entrar</button>
             <p class="esqueceu">
-                <a href="" class="">
+                <a href="" class="esqueceu-senha">
                     Esqueceu sua senha?
                 </a>
             </p>
