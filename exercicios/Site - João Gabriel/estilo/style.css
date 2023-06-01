@@ -284,6 +284,7 @@ header {
     display: inline-block;
     background-color: brown;
     border: #ffffff;
+    margin-left: 90px;
 }
 .planos h3{
     text-align: center;
