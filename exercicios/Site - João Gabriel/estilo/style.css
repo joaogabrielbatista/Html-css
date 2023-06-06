@@ -276,9 +276,14 @@ header {
     margin: 0 auto;
     padding: 0 auto;
 }*/
+#registro{
+    background-color: #000000;
+    padding: 100px;
+}
 .login h2{
     text-align: center;
     font-size: 2em;
+    color: #ffffff;
 }
 .planos{
     display: inline-block;
@@ -286,13 +291,24 @@ header {
     border: #ffffff;
     margin-left: 90px;
 }
+.planos img{
+    max-width: 200px;
+    height: auto;
+    width: auto;
+}
 .planos h3{
     text-align: center;
 }
 .button{
     display: block;
     text-align: center;
-    margin: 10px auto;
+    margin: auto;
+    margin-top: 90px;
+    border: transparent;
+    width: 130px;
+    height: 50px;
+    border-radius: 5px;
+
 }
 .botao-registro{
     color:#000000;
