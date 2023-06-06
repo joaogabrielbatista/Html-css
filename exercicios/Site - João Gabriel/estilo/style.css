@@ -308,7 +308,7 @@ header {
     width: 130px;
     height: 50px;
     border-radius: 5px;
-
+    cursor: pointer;
 }
 .botao-registro{
     color:#000000;
