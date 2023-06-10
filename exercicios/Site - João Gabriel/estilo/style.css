@@ -293,7 +293,8 @@ header {
 }
 .planos img {
   left: 20%;
-  max-width: 200px;
+  max-width: 30vh;
+  size: 100% 100%;
   height: auto;
   text-align: left;
   margin: 0px 10px;
@@ -303,19 +304,19 @@ header {
   position: absolute;
   left: 10%;
   top: 30%;
-  transform: translate(-40%, -25%);
+  transform: translate(10%, -25%);
 }
 .img2 {
   position: absolute;
-  left: 40%;
-  top: 41%;
-  transform: translate(150%, -50%);
+  left: 10%;
+  top: 30%;
+  transform: translate(150%, -25%);
 }
 .img3 {
   position: absolute;
-  left: 50%;
-  top: 45.5%;
-  transform: translate(350%, -60%);
+  left: 10%;
+  top: 30%;
+  transform: translate(290%, -25%);
 }
 .planos h3 {
   text-align: center;
