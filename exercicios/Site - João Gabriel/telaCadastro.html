@@ -58,18 +58,6 @@
         width: 100%;
         padding: 10px;
       }
-      .form-control i {
-        position: absolute;
-        top: 45px;
-        right: 10px;
-        visibility: hidden;
-      }
-      .form-control small {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        visibility: hidden;
-      }
       .form button {
         background-color: #fc00ff;
         border: 2px solid #fc00ff;
@@ -80,59 +68,7 @@
         padding: 10px;
         cursor: pointer;
       }
-      .form-control.success input{
-        border-color: #2ecc71;
-      }
-      .form-control.error input{
-        border-color: #e74c3c;
-      }
-      .form-control.success i.fa-solidfa-check{
-        color: #2ecc71;
-        visibility: hidden;
-      }
-      .form-control.error i.fa-exclamation-circle{
-        color: #e74c3c;
-        visibility: hidden;
-      }
-      .form-control.error small{
-        visibility: visible;
-        color: #e74c3c;
-      }
     </style>
-    <script>
-      const form = document.getElementById('form');
-      const username = document.getElementById('username');
-      const email = document.getElementById('email');
-      const password = document.getElementById('password');
-      const passwordConfirmation = document.getElementById('password-confirmation');
-
-      fomr.addEventListener('submit', (e)=>{
-        e.preventDefault();
-        checkInputs();
-      })
-      function checkInputs(){
-        const usernameValue = username.value;
-        const emailValue = email.value;
-        const passwordValue = password.value;
-        const passwordConfirmationValue = passwordConfirmation.value;
-
-        if(usernameValue ==''){
-            setErrorFor(username, "o nome de usuário é obrigatório.")
-        }
-      }
-      function setErrorFor(input, message){
-        const formControl = input.parentElement;
-        const small = formControl.querySelector('small')
-        
-        small.innerText = message;
-        formControl.className = 'form-control error'
-
-      }
-      function setSuccessFor(input){
-        const formControl = input.parentElement;
-        formControl.className = 'form-control success'
-      }
-    </script>
   </head>
 
   <body>
@@ -143,49 +79,25 @@
       <form action="" id="form" class="form">
         <div class="form-control error">
           <label for="username">Nome de usuário</label>
-          <input
-            type="text"
-            id="username"
-            placeholder="Digite seu nome de usuário"
-          />
-          <i class="fas fa-exclamation-circle"></i>
-          <i class="fa-solid fa-check"></i>
-          <small>mensagem de erro</small>
+          <input type="text" id="username" placeholder="Digite seu nome de usuário"/>
         </div>
 
         <div class="form-control error">
           <label for="email">Email</label>
           <input type="text" id="email" placeholder="Digite seu email" />
-          <i class="fas fa-exclamation-circle"></i>
-          <i class="fa-solid fa-check"></i>
-          <small>mensagem de erro</small>
         </div>
 
         <div class="form-control success">
           <label for="password">Senha</label>
           <input type="text" id="password" placeholder="Digite sua senha" />
-          <i class="fas fa-exclamation-circle"></i>
-          <i class="fa-solid fa-check"></i>
-          <small>mensagem de erro</small>
         </div>
 
         <div class="form-control">
           <label for="password-confirmation">Confirmação de senha</label>
-          <input
-            type="text"
-            id="password-confirmation"
-            placeholder="Confirme sua senha"
-          />
-          <i class="fas fa-exclamation-circle"></i>
-          <i class="fa-solid fa-check"></i>
-          <small>mensagem de erro</small>
+          <input type="text" id="password-confirmation" placeholder="Confirme sua senha"/>
         </div>
         <button type="submit">Enviar</button>
       </form>
     </div>
-    <script
-      src="https://kit.fontawesome.com/7a3b16c1d3.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
