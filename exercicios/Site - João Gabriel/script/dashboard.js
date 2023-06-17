@@ -140,6 +140,14 @@ function getTreino() {
     });
 }
 
-getAvalicao();
-getTreino();
-getDieta();
+function sair(){
+  document.cookie = "token=";
+  window.location.href = "index.html";
+}
+
+function dadosAluno(){
+  //Fazer conexão com o banco e pegar as infos
+  document.getElementById("nomeAluno").textContent = "Falta fazer a conexão com o banco aqui"
+  document.getElementById("dataNascimentoAluno").textContent = "Falta fazer a conexão com o banco aqui"
+}
+
