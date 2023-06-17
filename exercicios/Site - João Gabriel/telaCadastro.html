@@ -5,71 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tela de cadastro</title>
+    <link rel="shortcut icon" href="imagens/halter.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
       rel="stylesheet"
     />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Poppins", sans-serif;
-      }
-      body {
-        width: 100%;
-        min-height: 100vh;
-        background-color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .container {
-        background-color: #fafafa;
-        border-radius: 10px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-        width: 400px;
-        max-width: 100%;
-        overflow: hidden;
-      }
-      .header {
-        background-color: #eee;
-        padding: 20px;
-      }
-      .form {
-        padding: 20px;
-      }
-      .form-control {
-        margin-bottom: 10px;
-        padding-bottom: 20px;
-        position: relative;
-      }
-      .form-control label {
-        display: inline-block;
-        margin-bottom: 5px;
-      }
-      .form-control input {
-        border: 2px solid #f0f0f0;
-        background-color: #eee8e8;
-        display: block;
-        border-radius: 10px;
-        font-size: 14px;
-        width: 100%;
-        padding: 10px;
-      }
-      .form button {
-        background-color: #ff005c;
-        border: 2px solid #ff005c;
-        color: #fff;
-        font-size: 14px;
-        width: 100%;
-        border-radius: 10px;
-        padding: 10px;
-        cursor: pointer;
-      }
-    </style>
+    <link rel="stylesheet" href="estilo/cadastro.css" />
+    <script src="script/cadastro.js"></script>
   </head>
 
   <body>
@@ -77,28 +21,55 @@
       <div class="header">
         <h2>Crie Sua Conta</h2>
       </div>
-      <form action="" id="form" class="form">
+      <div id="form" class="form">
+        <span id="erro"></span>
         <div class="form-control error">
-          <label for="username">Nome de usuário</label>
-          <input type="text" id="username" placeholder="Digite seu nome de usuário"/>
+          <label for="username">Nome</label>
+          <input
+            type="text"
+            id="nome"
+            maxlength="45"
+            placeholder="Digite seu nome"
+          />
         </div>
 
         <div class="form-control error">
-          <label for="email">Email</label>
-          <input type="text" id="email" placeholder="Digite seu email" />
+          <label for="email">CPF</label>
+          <input
+            type="number"
+            id="cpf"
+            maxlength="11"
+            placeholder="Digite seu CPF"
+          />
+        </div>
+
+        <div class="form-control error">
+          <label for="email">Data Nascimento</label>
+          <input type="date" id="dt_nascimento" placeholder="Digite seu CPF" />
         </div>
 
         <div class="form-control success">
           <label for="password">Senha</label>
-          <input type="text" id="password" placeholder="Digite sua senha" />
+          <input
+            type="password"
+            id="password"
+            maxlength="8"
+            placeholder="Digite sua senha"
+          />
         </div>
 
         <div class="form-control">
           <label for="password-confirmation">Confirmação de senha</label>
-          <input type="text" id="password-confirmation" placeholder="Confirme sua senha"/>
+          <input
+            type="password"
+            id="password-confirmation"
+            maxlength="8"
+            placeholder="Confirme sua senha"
+          />
         </div>
-        <button type="submit">Enviar</button>
-      </form>
+
+        <button onclick="cadastrar()">Cadastrar</button>
+      </div>
     </div>
   </body>
 </html>

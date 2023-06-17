@@ -1,174 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tela de Login</title>
-    <link rel="shortcut icon" href="imagens/halter.ico" type="image/x-icon">
-    <!--<link rel="stylesheet" href="estilo/style.css">-->
-</head>
-<style>
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-    }
+    <link rel="shortcut icon" href="imagens/halter.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilo/login.css" />
+    <script src="script/login.js"></script>
+  </head>
 
-    .centro {
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        height: 97vh;
-        background-image: url(imagens/fundoLogin3.jpg);
-        background-color: black;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-size: 100% 100%;
-    }
-
-    .nome-caixa1 {
-        display: block;
-        margin-bottom: 8px;
-    }
-
-    .nome-caixa2 {
-        display: block;
-        margin-bottom: 8px;
-        padding-top: 15px;
-    }
-
-    #form {
-        padding-top: 20px;
-        width: 400px;
-        height: 370px;
-        background-color: #1e1e1e;
-        border-radius: 10px;
-    }
-
-    .div-input-mail {
-        text-align: center;
-    }
-
-    .div-input-check {
-        padding-bottom: 15px;
-        margin-left: 25px;
-        text-align: center;
-
-    }
-
-    .div-input-password {
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .botao {
-        background-color: #ff005c;
-        border-radius: 30px;
-        border: 1px solid transparent;
-        height: 40px;
-        width: 125px;
-        color: #ffff;
-        font-size: medium;
-        display: block;
-        margin: 0 auto;
-        cursor: pointer;
-    }
-
-    .botao:hover {
-        background-color: #ffff;
-        color: #ff005c;
-        transition: 0.3s;
-    }
-
-    .esqueceu {
-        text-align: center;
-    }
-
-    .email {
-        background-color: #121212;
-        color: #ffffff;
-        border-radius: 7px;
-        border-color: transparent;
-        height: 30px;
-        width: 300px;
-    }
-
-    .senha {
-        background-color: #121212;
-        color: #ffffff;
-        border-radius: 7px;
-        border-color: transparent;
-        height: 30px;
-        width: 300px;
-    }
-
-    label {
-        color: #ffff;
-    }
-
-    .esqueceu-senha {
-        color: #ffffff;
-        text-decoration: none;
-    }
-
-    .esqueceu-senha:hover {
-        color: #ff005c;
-        text-decoration: underline;
-        transition: 0.3s;
-    }
-
-    .div-input-check+label::before {
-        content: '';
-        width: 18px;
-        height: 18px;
-        border-radius: 4px;
-        background-color: #121212;
-        display: inline-block;
-        border-color: transparent;
-    }
-
-    .check:checked+label::before {
-        background-color: red;
-    }
-
-    .icon {
-        display: block;
-        margin: auto;
-        padding-bottom: 15px;
-    }
-</style>
-
-<body class="centro">
-    <form action="" method="POST" id="form">
-        <img src="imagens/halter.ico" class="icon">
-        <div class="div-input-mail">
-            <label class="nome-caixa1">
-                E-mail
-            </label>
-            <input type="text" value="" name="" id="email" class="email" />
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Olá, bem-vindo(a)</h2>
+      </div>
+      <div id="form" class="form">
+        <span id="erro"></span>
+        <div class="form-control error">
+          <label for="email">CPF</label>
+          <input type="text" id="cpf" placeholder="Digite seu email" />
         </div>
-        <div class="div-input-password">
-            <label class="nome-caixa2">
-                Senha
-            </label>
-            <input type="password" value="" name="" id="senha" class="senha" />
+
+        <div class="form-control success">
+          <label for="password">Senha</label>
+          <input type="text" id="password" placeholder="Digite sua senha" />
         </div>
         <div class="div-input-check">
-            <label class="">
-                <input type="checkbox" name="" id="" class="check" value="">
-                <i class="i"></i>Lembrar de mim
-            </label>
+          <label class="">
+            <input type="checkbox" name="" id="" class="check" value="" />
+            <i class="i"></i>Lembrar de mim
+          </label>
         </div>
-        <button type="submit" class="botao">Entrar</button>
+        <button onClick="login()">Entrar</button>
         <p class="esqueceu">
-            <a href="" class="esqueceu-senha">
-                Esqueceu sua senha?
-            </a>
+          <a href="" class="esqueceu-senha"> Esqueceu sua senha? </a>
         </p>
-    </form>
-</body>
-
+      </div>
+    </div>
+  </body>
 </html>

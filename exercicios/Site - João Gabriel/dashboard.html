@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard</title>
+    <link
+      rel="shortcut icon"
+      href="imagens/dashboard.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="estilo/dashboard.css" />
+    <script src="script/dashboard.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <table id="tableAvaliacao">
+        <thead>
+          <h1>Ficha de treino</h1>
+          <button>Adicionar informações de treino</button>
+          <tr>
+            <th>ID</th>
+            <th>Peso inicial</th>
+            <th>Altura</th>
+            <th class="alongar">Período da ficha</th>
+            <th>Peso final</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>60kg</td>
+            <td>1,65 m</td>
+            <td>05/06/23 a 05/08/23</td>
+            <td>65kg</td>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>65kg</td>
+            <td>1,70 m</td>
+            <td>06/06/23 a 06/02/23</td>
+            <td>70kg</td>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>70kg</td>
+            <td>1,75 m</td>
+            <td>07/06/23 a 07/09/23</td>
+            <td>75kg</td>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>75kg</td>
+            <td>1,80 m</td>
+            <td>08/06/23 a 08/09/23</td>
+            <td>80kg</td>
+          </tr>
+        </thead>
+        <tbody id="tableBodyAvaliacao"></tbody>
+      </table>
+    </div>
+
+    <div>
+      <table id="tableDieta">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Data Dieta</th>
+            <th>Dieta</th>
+          </tr>
+        </thead>
+        <tbody id="tableBodyDieta"></tbody>
+      </table>
+    </div>
+
+    <div>
+      <table id="tableTreino">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Data Treino</th>
+            <th>Treino</th>
+          </tr>
+        </thead>
+        <tbody id="tableBodyTreino"></tbody>
+      </table>
+    </div>
+
+    <script>
+      const tableBodyAvaliacao = document.getElementById("tableBodyAvaliacao");
+      const tableBodyDieta = document.getElementById("tableBodyDieta");
+      const tableBodyTreino = document.getElementById("tableBodyTreino");
+    </script>
+  </body>
+</html>
