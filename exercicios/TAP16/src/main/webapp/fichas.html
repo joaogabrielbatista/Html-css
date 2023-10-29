@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin</title>
+  <link rel="shortcut icon" href="imagens/dashboard.png" type="image/x-icon" />
+  <link rel="stylesheet" href="estilo/admin.css" />
+</head>
+
+<body>
+  <div id="modalInserirAvaliacao" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="modalInserirAvaliacao.style.display = 'none'">&times;</span>
+      <div class="form">
+        <div class="form-control"><label>Peso: </label><input id="insertPesoAvaliacao" type="number"
+            placeholder="Digite o peso"></div>
+        <div class="form-control"><label>Altura: </label><input id="insertAlturaAvaliacao" type="number"
+            placeholder="Digite a altura" /></div>
+        <div class="form-control"><label>Data avaliação:</label><input id="insertDateAvaliacao" type="date" /></div>
+        <button onclick="submitInsertAvaliacao()">Cadastrar avaliação</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modalUpdateAvaliacao" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="modalUpdateAvaliacao.style.display = 'none'">&times;</span>
+      <div class="form">
+        <div class="form-control" style="display: none"><label>Id:</label><input id="updateIdAvaliacao" type="number" />
+        </div>
+        <div class="form-control"><label>Peso: </label><input id="updatePesoAvaliacao" type="number"
+            placeholder="Digite o peso"></div>
+        <div class="form-control"><label>Altura: </label><input id="updateAlturaAvaliacao" type="number"
+            placeholder="Digite a altura" /></div>
+        <div class="form-control"><label>Data avaliação:</label><input id="updateDateAvaliacao" type="date" /></div>
+        <button onclick="submitUpdateAvaliacao()">Atualizar avaliação</button>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <h3 class="nomeLogo"> J&J - Personal Trainer </h3>
+    <button class="buttonSair" onclick="sair()">Sair</button>
+  </header>
+
+  <div id="container-fichas">
+    <div>
+      <h2>Fichas de avaliação</h2>
+      <!-- <button class="buttonAdd" onClick="modalInserirAvaliacao.style.display = 'block'">Adicionar avaliação</button> -->
+      <table id="tableAvaliacao">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Peso inicial</th>
+            <th>Altura</th>
+            <th>Data avaliação</th>
+            <th class="thButton"></th>
+            <th class="thButton"></th>
+          </tr>
+        </thead>
+        <tbody id="tableBodyAvaliacao">
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+  
+  <footer>
+  	<div class="button-container-footer">
+  		<a href="dashboard.html">Dashboard</a>
+  		<a href="admin.html">Admin</a>
+  		<a href="fichas.html">Fichas</a>
+  	</div>
+  </footer>
+  
+  <script src="script/fichas.js"></script>
+</body>
+
+</html>

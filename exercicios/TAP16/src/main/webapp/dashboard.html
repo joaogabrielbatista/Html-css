@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard</title>
+    <link
+      rel="shortcut icon"
+      href="imagens/dashboard.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="estilo/dashboard.css" />
+    <script src="script/dashboard.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h3 class="nomeLogo"> J&J - Personal Trainer </h3>
+      <button class="buttonSair" onclick="sair()">Sair</span>
+    </header>
+    <div class="infosAluno">
+      <span> <b>Aluno:</b> <span id="nomeAluno"></span> </span> <br/>
+      <span> <b>Data de nascimento:</b> <span id="dataNascimentoAluno"></span> </span>
+    </div>
+    <div id="container-fichas">
+    <div>
+      <h2>Ficha de treino</h2>
+      <table id="tableAvaliacao">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Peso inicial</th>
+            <th>Altura</th>
+            <th>Data avaliação</th>
+          </tr>
+        </thead>
+        <tbody id="tableBodyAvaliacao">
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h2>Ficha de Dieta</h2>
+      <table id="tableDieta">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Data Dieta</th>
+            <th>Dieta</th>
+          </tr>
+        </thead>
+        <tbody id="tableBodyDieta">
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h2>Ficha de Treino</h2>
+      <table id="tableTreino">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Data Treino</th>
+            <th>Treino</th>
+          </tr>
+        </thead>
+        <tbody id="tableBodyTreino">
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <footer>
+  	<div class="button-container-footer">
+  		<a href="dashboard.html">Dashboard</a>
+  		<a href="admin.html">Admin</a>
+  		<a href="fichas.html">Fichas</a>
+  	</div>
+  </footer>
+  
+    <script>
+      const tableBodyAvaliacao = document.getElementById("tableBodyAvaliacao");
+      const tableBodyDieta = document.getElementById("tableBodyDieta");
+      const tableBodyTreino = document.getElementById("tableBodyTreino");
+      dadosAluno()
+      getAvalicao();
+      getTreino();
+      getDieta();
+    </script>
+  </body>
+</html>

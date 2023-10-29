@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tela de Login</title>
+    <link rel="shortcut icon" href="imagens/halter.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilo/login.css" />
+    <script src="script/login.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Olá, bem-vindo(a)</h2>
+      </div>
+      <div id="form" class="form">
+        <span id="erro"></span>
+        <div class="form-control error">
+          <label for="email">CPF</label>
+          <input type="text" id="cpf" placeholder="Digite seu cpf" />
+        </div>
+
+        <div class="form-control success">
+          <label for="password">Senha</label>
+          <input type="password" id="password" placeholder="Digite sua senha" />
+        </div>
+        <div class="div-input-check">
+          <label class="">
+            <input type="checkbox" name="" id="" class="check" value="" />
+            <i class="i"></i>Lembrar de mim
+          </label>
+        </div>
+        <button onClick="login()">Entrar</button>
+        <p class="esqueceu">
+          <a href="" class="esqueceu-senha"> Esqueceu sua senha? </a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
