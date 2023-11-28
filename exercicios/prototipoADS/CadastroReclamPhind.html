@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo2/style.css" />
+    <title>Cadastro de Reclamação</title>
+  </head>
+  <body>
+    <div class="header">
+      <a href="login.html"><i class="fas fa-arrow-left"></i></a>
+      <h1>Faça sua reclamação aqui</h1>
+    </div>
+    <div class="complaint-form">
+      <form>
+        <div class="input-group">
+          <i class="fas fa-map-marker-alt"></i>
+          <input type="text" placeholder="Local do problema" required />
+        </div>
+        <div class="input-group">
+          <i class="fas fa-pencil-alt"></i>
+          <textarea placeholder="Descreva o problema" required></textarea>
+        </div>
+        <div class="input-group">
+          <i class="fas fa-tags"></i>
+          <select required>
+            <option value="">Selecione a categoria</option>
+            <option value="buraco">Buraco no asfalto</option>
+            <option value="poste">Posto sem iluminação</option>
+            <option value="saneamento">Rua sem saneamento</option>
+            <option value="sinalizacao">Rua sem sinalização de trânsito</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <i class="fas fa-camera"></i>
+          <button type="button">Adicionar foto ou vídeo do local</button>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>

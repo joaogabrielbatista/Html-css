@@ -1,0 +1,91 @@
+body {
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+.login-form {
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.login-form a {
+  display: block;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+}
+
+.blue-line {
+  width: 2px;
+  height: 100%;
+  background-color: #007bff;
+  position: absolute;
+  left: 0;
+}
+
+/* CSS DA PAGINA DE CADASTRO RECLAMACAO  */
+
+body {
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+}
+
+.complaint-form {
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.complaint-form .input-group {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.complaint-form .input-group i {
+  margin-right: 10px;
+}
+
+.complaint-form .input-group input,
+.complaint-form .input-group textarea,
+.complaint-form .input-group select {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.complaint-form .input-group button {
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+}
